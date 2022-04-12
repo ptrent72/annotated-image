@@ -14,7 +14,7 @@ const close_buttons = document.querySelectorAll(".close");
 close_buttons.forEach(function (close_button) {
     close_button.addEventListener("click", function (e) {
         e.preventDefault(); 
-            e.stopPropagation();
+        e.stopPropagation();
     
         const this_close_button = e.target;
         const this_dot = this_close_button.closest(".dot");
